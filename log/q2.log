@@ -1,0 +1,2250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="Q2.system" at="2021-02-17T20:10:55.122763900">
+  <info>
+    Q2 started, deployDir=C:\Users\Phoon\Desktop\BBW\api-va\deploy, environment=default
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:10:56.016248800" lifespan="876ms">
+  <version>
+    jPOS 2.1.5 master/54f5dee (2020-12-06 18:53:51 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </version>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:10:56.037237300" lifespan="11ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:10:56.054227" lifespan="16ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:10:56.067219300" lifespan="11ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml
+  </info>
+</log>
+<log realm="org.jpos.q2.iso.ChannelAdaptor" at="2021-02-17T20:10:56.069219800">
+  <warn>
+    error starting service
+    <iso-exception>
+      com.training.iso8583.jpos.channel.KiselChannel
+      <nested-exception>
+      javax.management.ReflectionException: The MBean class could not be loaded
+	at java.management/com.sun.jmx.mbeanserver.MBeanInstantiator.loadClass(MBeanInstantiator.java:650)
+	at java.management/com.sun.jmx.mbeanserver.MBeanInstantiator.findClass(MBeanInstantiator.java:119)
+	at java.management/com.sun.jmx.mbeanserver.MBeanInstantiator.findClass(MBeanInstantiator.java:142)
+	at java.management/com.sun.jmx.mbeanserver.MBeanInstantiator.instantiate(MBeanInstantiator.java:614)
+	at java.management/com.sun.jmx.mbeanserver.MBeanInstantiator.instantiate(MBeanInstantiator.java:523)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.instantiate(JmxMBeanServer.java:990)
+	at org.jpos.q2.QFactory.newInstance(QFactory.java:303)
+	at org.jpos.q2.iso.ChannelAdaptor.newChannel(ChannelAdaptor.java:197)
+	at org.jpos.q2.iso.ChannelAdaptor.initChannel(ChannelAdaptor.java:252)
+	at org.jpos.q2.iso.ChannelAdaptor.startService(ChannelAdaptor.java:76)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:174)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: com.training.iso8583.jpos.channel.KiselChannel
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:471)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:588)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at java.management/com.sun.jmx.mbeanserver.MBeanInstantiator.loadClass(MBeanInstantiator.java:645)
+	... 31 more
+      </nested-exception>
+      org.jpos.core.ConfigurationException: com.training.iso8583.jpos.channel.KiselChannel (javax.management.ReflectionException: The MBean class could not be loaded)
+	at org.jpos.q2.QFactory.newInstance(QFactory.java:305)
+	at org.jpos.q2.iso.ChannelAdaptor.newChannel(ChannelAdaptor.java:197)
+	at org.jpos.q2.iso.ChannelAdaptor.initChannel(ChannelAdaptor.java:252)
+	at org.jpos.q2.iso.ChannelAdaptor.startService(ChannelAdaptor.java:76)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:174)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Nested:javax.management.ReflectionException: The MBean class could not be loaded
+	at java.management/com.sun.jmx.mbeanserver.MBeanInstantiator.loadClass(MBeanInstantiator.java:650)
+	at java.management/com.sun.jmx.mbeanserver.MBeanInstantiator.findClass(MBeanInstantiator.java:119)
+	at java.management/com.sun.jmx.mbeanserver.MBeanInstantiator.findClass(MBeanInstantiator.java:142)
+	at java.management/com.sun.jmx.mbeanserver.MBeanInstantiator.instantiate(MBeanInstantiator.java:614)
+	at java.management/com.sun.jmx.mbeanserver.MBeanInstantiator.instantiate(MBeanInstantiator.java:523)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.instantiate(JmxMBeanServer.java:990)
+	at org.jpos.q2.QFactory.newInstance(QFactory.java:303)
+	at org.jpos.q2.iso.ChannelAdaptor.newChannel(ChannelAdaptor.java:197)
+	at org.jpos.q2.iso.ChannelAdaptor.initChannel(ChannelAdaptor.java:252)
+	at org.jpos.q2.iso.ChannelAdaptor.startService(ChannelAdaptor.java:76)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:174)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: com.training.iso8583.jpos.channel.KiselChannel
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:471)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:588)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at java.management/com.sun.jmx.mbeanserver.MBeanInstantiator.loadClass(MBeanInstantiator.java:645)
+	... 31 more
+    </iso-exception>
+  </warn>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2021-02-17T20:10:56.077412400">
+  <info>
+    Starting SystemMonitor
+  </info>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2021-02-17T20:10:56.101400500">
+  <info>
+           OS: Windows 10 (10.0)
+         Java: 11.0.6 (JetBrains s.r.o) AES-secure
+  environment: default
+ process name: 12180@WSNBMNTRs
+    user name: Phoon
+         host: WSNBMNTRs/192.168.56.1
+          cwd: C:\Users\Phoon\Desktop\BBW\api-va
+   free space: 111.1 GiB
+      version: 2.1.5 (54f5dee)
+     instance: f21cadf3-792c-4323-89db-a1ca981f3387
+       uptime: 00:00:01.172 (-1.000000)
+   processors: 8
+       drift : 0
+memory(t/u/f): 184/46/137
+     encoding: UTF-8
+     timezone: Asia/Bangkok (Indochina Time) +07:00
+watch service: sun.nio.fs.WindowsWatchService
+        clock: 1613567456 2021-02-17T13:10:56.078412600Z
+ thread count: 16
+ peak threads: 17
+ user threads: 8
+        Thread[Reference Handler,10,system]
+        Thread[Finalizer,8,system]
+        Thread[Signal Dispatcher,9,system]
+        Thread[Attach Listener,5,system]
+        Thread[RMI TCP Accept-0,5,system]
+        Thread[RMI Scheduler(0),5,system]
+        Thread[main,5,main]
+        Thread[Monitor Ctrl-Break,5,main]
+        Thread[pool-1-thread-1,5,main]
+        Thread[Q2-f21cadf3-792c-4323-89db-a1ca981f3387,5,main]
+        Thread[FileSystemWatchService,5,main]
+        Thread[Timer-0,5,main]
+        Thread[pool-2-thread-1,5,main]
+        Thread[SystemMonitor,5,main]
+        Thread[Common-Cleaner,8,InnocuousThreadGroup]
+        Thread[RMI TCP Connection(1)-192.168.56.1,5,RMI Runtime]
+name-registrar:
+  tspace:default: org.jpos.space.TSpace
+     key-count: 0
+        gcinfo: 0,0
+  Q2: org.jpos.q2.Q2
+  mux.kisel: org.jpos.q2.iso.QMUX
+    tx=0, rx=0, tx_expired=0, tx_pending=0, rx_expired=0, rx_pending=0, rx_unhandled=0, rx_forwarded=0, connected=false, last=0
+  logger.Q2: org.jpos.util.Logger
+  kisel-channel: org.jpos.q2.iso.ChannelAdaptor
+    tx=0, rx=0, connects=0, last=0
+  logger.Q2.buffered: org.jpos.util.BufferedLogListener
+  </info>
+</log>
+<log realm="stdout" at="2021-02-17T20:10:56.338263800" lifespan="502ms">
+    
+
+      .   ____          _            __ _ _
+
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+
+     =========|_|==============|___/=/_/_/_/
+
+    [32m :: Spring Boot :: [39m              [2m (v2.4.2)[0;39m
+
+    
+
+    [2m2021-02-17 20:10:55.940[0;39m [32m INFO[0;39m [35m12180[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.bbw.apiva.ApiVaApplication          [0;39m [2m:[0;39m Starting ApiVaApplication using Java 11.0.6 on WSNBMNTRs with PID 12180 (C:\Users\Phoon\Desktop\BBW\api-va\target\classes started by Phoon in C:\Users\Phoon\Desktop\BBW\api-va)
+
+    [2m2021-02-17 20:10:55.944[0;39m [32m INFO[0;39m [35m12180[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.bbw.apiva.ApiVaApplication          [0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+
+</log>
+<log realm="stdout" at="2021-02-17T20:10:57.358626200" lifespan="502ms">
+    [2m2021-02-17 20:10:56.856[0;39m [32m INFO[0;39m [35m12180[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+
+    [2m2021-02-17 20:10:56.866[0;39m [32m INFO[0;39m [35m12180[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+
+    [2m2021-02-17 20:10:56.866[0;39m [32m INFO[0;39m [35m12180[0;39m [2m---[0;39m [2m[           main][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.41]
+
+    [2m2021-02-17 20:10:56.968[0;39m [32m INFO[0;39m [35m12180[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+
+    [2m2021-02-17 20:10:56.968[0;39m [32m INFO[0;39m [35m12180[0;39m [2m---[0;39m [2m[           main][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 954 ms
+
+    [2m2021-02-17 20:10:57.127[0;39m [32m INFO[0;39m [35m12180[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+
+    [2m2021-02-17 20:10:57.289[0;39m [32m INFO[0;39m [35m12180[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+
+    [2m2021-02-17 20:10:57.299[0;39m [32m INFO[0;39m [35m12180[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.bbw.apiva.ApiVaApplication          [0;39m [2m:[0;39m Started ApiVaApplication in 1.991 seconds (JVM running for 3.455)
+
+</log>
+<log realm="Q2.system" at="2021-02-17T20:12:15.104561600">
+  <info>
+    created deploy/10_channel_jpos.xml~
+    modified deploy/10_channel_jpos.xml~
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:12:15.107561700">
+  <trace>
+    undeploying:C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:12:15.108560100">
+  <info>
+    undeployed:C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:12:15.109559700">
+  <info>
+    modified deploy/10_channel_jpos.xml~
+    modified deploy/10_channel_jpos.xml
+    removed deploy/10_channel_jpos.xml~
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:12:15.115555900" lifespan="4ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml
+  </info>
+</log>
+<log realm="org.jpos.q2.iso.ChannelAdaptor" at="2021-02-17T20:12:15.130547600" lifespan="1ms">
+  <warn>
+    error starting service
+    <iso-exception>
+      org.jpos.core.ConfigurationException: Error reading cfg/kisel-packager.xml (org.jpos.iso.ISOException: Error reading cfg/kisel-packager.xml (java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\cfg\kisel-packager.xml (The system cannot find the file specified)))
+      <iso-exception>
+        Error reading cfg/kisel-packager.xml
+        <iso-exception>
+          Error reading cfg/kisel-packager.xml
+          <nested-exception>
+          java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\cfg\kisel-packager.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1141)
+	at org.jpos.iso.packager.GenericPackager.readFile(GenericPackager.java:201)
+	at org.jpos.iso.packager.GenericPackager.setConfiguration(GenericPackager.java:158)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:373)
+	at org.jpos.q2.iso.ChannelAdaptor.newChannel(ChannelAdaptor.java:202)
+	at org.jpos.q2.iso.ChannelAdaptor.initChannel(ChannelAdaptor.java:252)
+	at org.jpos.q2.iso.ChannelAdaptor.startService(ChannelAdaptor.java:76)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:174)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+          </nested-exception>
+          org.jpos.iso.ISOException: Error reading cfg/kisel-packager.xml (java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\cfg\kisel-packager.xml (The system cannot find the file specified))
+	at org.jpos.iso.packager.GenericPackager.setConfiguration(GenericPackager.java:161)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:373)
+	at org.jpos.q2.iso.ChannelAdaptor.newChannel(ChannelAdaptor.java:202)
+	at org.jpos.q2.iso.ChannelAdaptor.initChannel(ChannelAdaptor.java:252)
+	at org.jpos.q2.iso.ChannelAdaptor.startService(ChannelAdaptor.java:76)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:174)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Nested:java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\cfg\kisel-packager.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1141)
+	at org.jpos.iso.packager.GenericPackager.readFile(GenericPackager.java:201)
+	at org.jpos.iso.packager.GenericPackager.setConfiguration(GenericPackager.java:158)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:373)
+	at org.jpos.q2.iso.ChannelAdaptor.newChannel(ChannelAdaptor.java:202)
+	at org.jpos.q2.iso.ChannelAdaptor.initChannel(ChannelAdaptor.java:252)
+	at org.jpos.q2.iso.ChannelAdaptor.startService(ChannelAdaptor.java:76)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:174)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+        </iso-exception>
+        org.jpos.core.ConfigurationException: Error reading cfg/kisel-packager.xml (org.jpos.iso.ISOException: Error reading cfg/kisel-packager.xml (java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\cfg\kisel-packager.xml (The system cannot find the file specified)))
+	at org.jpos.iso.packager.GenericPackager.setConfiguration(GenericPackager.java:161)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:373)
+	at org.jpos.q2.iso.ChannelAdaptor.newChannel(ChannelAdaptor.java:202)
+	at org.jpos.q2.iso.ChannelAdaptor.initChannel(ChannelAdaptor.java:252)
+	at org.jpos.q2.iso.ChannelAdaptor.startService(ChannelAdaptor.java:76)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:174)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Nested:org.jpos.iso.ISOException: Error reading cfg/kisel-packager.xml (java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\cfg\kisel-packager.xml (The system cannot find the file specified))
+	at org.jpos.iso.packager.GenericPackager.setConfiguration(GenericPackager.java:161)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:373)
+	at org.jpos.q2.iso.ChannelAdaptor.newChannel(ChannelAdaptor.java:202)
+	at org.jpos.q2.iso.ChannelAdaptor.initChannel(ChannelAdaptor.java:252)
+	at org.jpos.q2.iso.ChannelAdaptor.startService(ChannelAdaptor.java:76)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:174)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Nested:java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\cfg\kisel-packager.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1141)
+	at org.jpos.iso.packager.GenericPackager.readFile(GenericPackager.java:201)
+	at org.jpos.iso.packager.GenericPackager.setConfiguration(GenericPackager.java:158)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:373)
+	at org.jpos.q2.iso.ChannelAdaptor.newChannel(ChannelAdaptor.java:202)
+	at org.jpos.q2.iso.ChannelAdaptor.initChannel(ChannelAdaptor.java:252)
+	at org.jpos.q2.iso.ChannelAdaptor.startService(ChannelAdaptor.java:76)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:174)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+      </iso-exception>
+      org.jpos.core.ConfigurationException: org.jpos.core.ConfigurationException: Error reading cfg/kisel-packager.xml (org.jpos.iso.ISOException: Error reading cfg/kisel-packager.xml (java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\cfg\kisel-packager.xml (The system cannot find the file specified))) (org.jpos.core.ConfigurationException: Error reading cfg/kisel-packager.xml (org.jpos.iso.ISOException: Error reading cfg/kisel-packager.xml (java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\cfg\kisel-packager.xml (The system cannot find the file specified))))
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:377)
+	at org.jpos.q2.iso.ChannelAdaptor.newChannel(ChannelAdaptor.java:202)
+	at org.jpos.q2.iso.ChannelAdaptor.initChannel(ChannelAdaptor.java:252)
+	at org.jpos.q2.iso.ChannelAdaptor.startService(ChannelAdaptor.java:76)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:174)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Nested:org.jpos.core.ConfigurationException: Error reading cfg/kisel-packager.xml (org.jpos.iso.ISOException: Error reading cfg/kisel-packager.xml (java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\cfg\kisel-packager.xml (The system cannot find the file specified)))
+	at org.jpos.iso.packager.GenericPackager.setConfiguration(GenericPackager.java:161)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:373)
+	at org.jpos.q2.iso.ChannelAdaptor.newChannel(ChannelAdaptor.java:202)
+	at org.jpos.q2.iso.ChannelAdaptor.initChannel(ChannelAdaptor.java:252)
+	at org.jpos.q2.iso.ChannelAdaptor.startService(ChannelAdaptor.java:76)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:174)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Nested:org.jpos.iso.ISOException: Error reading cfg/kisel-packager.xml (java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\cfg\kisel-packager.xml (The system cannot find the file specified))
+	at org.jpos.iso.packager.GenericPackager.setConfiguration(GenericPackager.java:161)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:373)
+	at org.jpos.q2.iso.ChannelAdaptor.newChannel(ChannelAdaptor.java:202)
+	at org.jpos.q2.iso.ChannelAdaptor.initChannel(ChannelAdaptor.java:252)
+	at org.jpos.q2.iso.ChannelAdaptor.startService(ChannelAdaptor.java:76)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:174)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Nested:java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\cfg\kisel-packager.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1141)
+	at org.jpos.iso.packager.GenericPackager.readFile(GenericPackager.java:201)
+	at org.jpos.iso.packager.GenericPackager.setConfiguration(GenericPackager.java:158)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:373)
+	at org.jpos.q2.iso.ChannelAdaptor.newChannel(ChannelAdaptor.java:202)
+	at org.jpos.q2.iso.ChannelAdaptor.initChannel(ChannelAdaptor.java:252)
+	at org.jpos.q2.iso.ChannelAdaptor.startService(ChannelAdaptor.java:76)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:174)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </iso-exception>
+  </warn>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="Q2.system" at="2021-02-17T20:12:57.437525100">
+  <info>
+    Q2 started, deployDir=C:\Users\Phoon\Desktop\BBW\api-va\deploy, environment=default
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:12:58.315562200" lifespan="862ms">
+  <version>
+    jPOS 2.1.5 master/54f5dee (2020-12-06 18:53:51 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </version>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:12:58.329554500" lifespan="6ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:12:58.347544500" lifespan="16ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:12:58.357537300" lifespan="8ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml
+  </info>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2021-02-17T20:12:58.402511700">
+  <info>
+    Starting SystemMonitor
+  </info>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2021-02-17T20:12:58.423500300">
+  <info>
+           OS: Windows 10 (10.0)
+         Java: 11.0.6 (JetBrains s.r.o) AES-secure
+  environment: default
+ process name: 4864@WSNBMNTRs
+    user name: Phoon
+         host: WSNBMNTRs/192.168.56.1
+          cwd: C:\Users\Phoon\Desktop\BBW\api-va
+   free space: 111.1 GiB
+      version: 2.1.5 (54f5dee)
+     instance: 8178a30b-150c-4d46-a7bd-95313f37e57c
+       uptime: 00:00:01.179 (-1.000000)
+   processors: 8
+       drift : 0
+memory(t/u/f): 184/42/141
+     encoding: UTF-8
+     timezone: Asia/Bangkok (Indochina Time) +07:00
+watch service: sun.nio.fs.WindowsWatchService
+        clock: 1613567578 2021-02-17T13:12:58.403511700Z
+ thread count: 18
+ peak threads: 18
+ user threads: 10
+        Thread[Reference Handler,10,system]
+        Thread[Finalizer,8,system]
+        Thread[Signal Dispatcher,9,system]
+        Thread[Attach Listener,5,system]
+        Thread[RMI TCP Accept-0,5,system]
+        Thread[RMI Scheduler(0),5,system]
+        Thread[main,5,main]
+        Thread[Monitor Ctrl-Break,5,main]
+        Thread[pool-1-thread-1,5,main]
+        Thread[Q2-8178a30b-150c-4d46-a7bd-95313f37e57c,5,main]
+        Thread[FileSystemWatchService,5,main]
+        Thread[Timer-0,5,main]
+        Thread[pool-2-thread-1,5,main]
+        Thread[channel-sender-kisel-send,5,main]
+        Thread[channel-receiver-kisel-receive,5,main]
+        Thread[SystemMonitor,5,main]
+        Thread[Common-Cleaner,8,InnocuousThreadGroup]
+        Thread[RMI TCP Connection(1)-192.168.56.1,5,RMI Runtime]
+name-registrar:
+  tspace:default: org.jpos.space.TSpace
+     key-count: 0
+        gcinfo: 0,0
+  Q2: org.jpos.q2.Q2
+  mux.kisel: org.jpos.q2.iso.QMUX
+    tx=0, rx=0, tx_expired=0, tx_pending=0, rx_expired=0, rx_pending=0, rx_unhandled=0, rx_forwarded=0, connected=false, last=0
+  logger.Q2: org.jpos.util.Logger
+  kisel-channel: org.jpos.q2.iso.ChannelAdaptor
+    tx=0, rx=0, connects=0, last=0
+  logger.: org.jpos.util.Logger
+  logger.Q2.buffered: org.jpos.util.BufferedLogListener
+  channel.kisel-channel: com.bbw.apiva.channel.BbwVaChannel
+  </info>
+</log>
+<log realm="stdout" at="2021-02-17T20:12:58.648670700" lifespan="502ms">
+    
+
+      .   ____          _            __ _ _
+
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+
+     =========|_|==============|___/=/_/_/_/
+
+    [32m :: Spring Boot :: [39m              [2m (v2.4.2)[0;39m
+
+    
+
+    [2m2021-02-17 20:12:58.252[0;39m [32m INFO[0;39m [35m4864[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.bbw.apiva.ApiVaApplication          [0;39m [2m:[0;39m Starting ApiVaApplication using Java 11.0.6 on WSNBMNTRs with PID 4864 (C:\Users\Phoon\Desktop\BBW\api-va\target\classes started by Phoon in C:\Users\Phoon\Desktop\BBW\api-va)
+
+    [2m2021-02-17 20:12:58.256[0;39m [32m INFO[0;39m [35m4864[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.bbw.apiva.ApiVaApplication          [0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+
+</log>
+<log realm="stdout" at="2021-02-17T20:12:59.573792800" lifespan="501ms">
+    [2m2021-02-17 20:12:59.072[0;39m [32m INFO[0;39m [35m4864[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+
+    [2m2021-02-17 20:12:59.082[0;39m [32m INFO[0;39m [35m4864[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+
+    [2m2021-02-17 20:12:59.082[0;39m [32m INFO[0;39m [35m4864[0;39m [2m---[0;39m [2m[           main][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.41]
+
+    [2m2021-02-17 20:12:59.184[0;39m [32m INFO[0;39m [35m4864[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+
+    [2m2021-02-17 20:12:59.184[0;39m [32m INFO[0;39m [35m4864[0;39m [2m---[0;39m [2m[           main][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 876 ms
+
+    [2m2021-02-17 20:12:59.346[0;39m [32m INFO[0;39m [35m4864[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+
+    [2m2021-02-17 20:12:59.523[0;39m [32m INFO[0;39m [35m4864[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+
+    [2m2021-02-17 20:12:59.534[0;39m [32m INFO[0;39m [35m4864[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.bbw.apiva.ApiVaApplication          [0;39m [2m:[0;39m Started ApiVaApplication in 1.924 seconds (JVM running for 3.312)
+
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="Q2.system" at="2021-02-17T20:33:18.769690">
+  <info>
+    Q2 started, deployDir=C:\Users\Phoon\Desktop\BBW\api-va\deploy, environment=default
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:33:19.115902800">
+  <warn>
+    Tidying C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml out of the way, by adding .DUP
+    It will be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml.DUP see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:33:19.117904500">
+  <info>
+    Q2 started, deployDir=C:\Users\Phoon\Desktop\BBW\api-va\deploy, environment=default
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:33:19.626098600" lifespan="836ms">
+  <version>
+    jPOS 2.1.5 master/54f5dee (2020-12-06 18:53:51 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </version>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:33:19.626098600" lifespan="505ms">
+  <version>
+    jPOS 2.1.5 master/54f5dee (2020-12-06 18:53:51 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </version>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:33:19.635092400">
+  <trace>
+    undeploying:C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml
+  </trace>
+</log>
+</logger>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="Q2.system" at="2021-02-17T20:34:41.089025600">
+  <info>
+    removed deploy/00_logger.xml
+    created deploy/00_logger.xml.DUP
+    modified deploy/00_logger.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:41.092023900">
+  <warn>
+    Error Tidying. Could not tidy  C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml out of the way, by adding .BAD
+    It could not be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml.BAD see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:41.092023900" lifespan="1ms">
+  <info>
+    <exception name="C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml (The system cannot find the file specified)">
+    java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:217)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:277)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:264)
+	at org.jdom2.input.SAXBuilder.build(SAXBuilder.java:1116)
+	at org.jpos.q2.Q2.deploy(Q2.java:572)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:48.403225600">
+  <info>
+    removed deploy/10_channel_jpos.xml.DUP
+    created deploy/10_channel_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:48.404216800">
+  <info>
+    removed deploy/10_channel_jpos.xml.DUP
+    created deploy/10_channel_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:48.412209800">
+  <warn>
+    Tidying C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml out of the way, by adding .DUP
+    It will be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml.DUP see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:48.413210400" lifespan="7ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml
+    <exception name="Q2:type=qbean,service=kisel-channel">
+    javax.management.InstanceAlreadyExistsException: Q2:type=qbean,service=kisel-channel
+	at java.management/com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:436)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1855)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:955)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:890)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:320)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.jpos.q2.QFactory.createQBean(QFactory.java:98)
+	at org.jpos.q2.Q2.deploy(Q2.java:590)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:48.413210400" lifespan="7ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:48.414208500">
+  <info>
+    removed deploy/10_channel_jpos.xml
+    created deploy/10_channel_jpos.xml.DUP
+    modified deploy/10_channel_jpos.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:48.463180600">
+  <info>
+    removed deploy/10_channel_jpos.xml
+    created deploy/10_channel_jpos.xml.DUP
+    modified deploy/10_channel_jpos.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:48.466179400">
+  <warn>
+    Error Tidying. Could not tidy  C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml out of the way, by adding .BAD
+    It could not be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml.BAD see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:48.466179400" lifespan="1ms">
+  <info>
+    <exception name="C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml (The system cannot find the file specified)">
+    java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:217)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:277)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:264)
+	at org.jdom2.input.SAXBuilder.build(SAXBuilder.java:1116)
+	at org.jpos.q2.Q2.deploy(Q2.java:572)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:55.030587100">
+  <info>
+    removed deploy/20_mux_jpos.xml.DUP
+    created deploy/20_mux_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:55.030587100">
+  <info>
+    removed deploy/20_mux_jpos.xml.DUP
+    created deploy/20_mux_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:55.046582100">
+  <warn>
+    Tidying C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml out of the way, by adding .DUP
+    It will be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml.DUP see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:55.046582100" lifespan="14ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml
+    <exception name="Q2:type=qbean,service=kisel">
+    javax.management.InstanceAlreadyExistsException: Q2:type=qbean,service=kisel
+	at java.management/com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:436)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1855)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:955)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:890)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:320)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.jpos.q2.QFactory.createQBean(QFactory.java:98)
+	at org.jpos.q2.Q2.deploy(Q2.java:590)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:55.047580300" lifespan="15ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:55.047580300">
+  <info>
+    removed deploy/20_mux_jpos.xml
+    created deploy/20_mux_jpos.xml.DUP
+    modified deploy/20_mux_jpos.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:55.048578800">
+  <info>
+    removed deploy/20_mux_jpos.xml
+    created deploy/20_mux_jpos.xml.DUP
+    modified deploy/20_mux_jpos.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:55.050578100">
+  <warn>
+    Error Tidying. Could not tidy  C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml out of the way, by adding .BAD
+    It could not be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml.BAD see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:55.051578100" lifespan="1ms">
+  <info>
+    <exception name="C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml (The system cannot find the file specified)">
+    java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:217)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:277)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:264)
+	at org.jdom2.input.SAXBuilder.build(SAXBuilder.java:1116)
+	at org.jpos.q2.Q2.deploy(Q2.java:572)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:59.879742900">
+  <info>
+    removed deploy/99_sysmon.xml.DUP
+    created deploy/99_sysmon.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:59.879742900">
+  <info>
+    removed deploy/99_sysmon.xml.DUP
+    created deploy/99_sysmon.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:59.888724800" lifespan="7ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml
+  </info>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2021-02-17T20:34:59.888724800">
+  <info>
+    Starting SystemMonitor
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:59.888724800">
+  <warn>
+    Tidying C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml out of the way, by adding .DUP
+    It will be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml.DUP see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:59.889722900" lifespan="8ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml
+    <exception name="Q2:type=qbean,service=sysmon">
+    javax.management.InstanceAlreadyExistsException: Q2:type=qbean,service=sysmon
+	at java.management/com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:436)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1855)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:955)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:890)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:320)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.jpos.q2.QFactory.createQBean(QFactory.java:98)
+	at org.jpos.q2.Q2.deploy(Q2.java:590)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:59.889722900">
+  <info>
+    removed deploy/99_sysmon.xml
+    created deploy/99_sysmon.xml.DUP
+    modified deploy/99_sysmon.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:59.889722900">
+  <info>
+    removed deploy/99_sysmon.xml
+    created deploy/99_sysmon.xml.DUP
+    modified deploy/99_sysmon.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:59.892723300">
+  <warn>
+    Error Tidying. Could not tidy  C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml out of the way, by adding .BAD
+    It could not be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml.BAD see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:34:59.892723300" lifespan="1ms">
+  <info>
+    <exception name="C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml (The system cannot find the file specified)">
+    java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:217)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:277)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:264)
+	at org.jdom2.input.SAXBuilder.build(SAXBuilder.java:1116)
+	at org.jpos.q2.Q2.deploy(Q2.java:572)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2021-02-17T20:34:59.907727900">
+  <info>
+           OS: Windows 10 (10.0)
+         Java: 11.0.6 (JetBrains s.r.o) AES-secure
+  environment: default
+ process name: 484@WSNBMNTRs
+    user name: Phoon
+         host: WSNBMNTRs/192.168.56.1
+          cwd: C:\Users\Phoon\Desktop\BBW\api-va
+   free space: 111.1 GiB
+      version: 2.1.5 (54f5dee)
+     instance: 6a0d34dd-e6ba-4d79-9708-dde5096f0da0
+       uptime: 00:01:10.861 (-1.000000)
+   processors: 8
+       drift : 0
+memory(t/u/f): 221/28/192
+     encoding: UTF-8
+     timezone: Asia/Bangkok (Indochina Time) +07:00
+watch service: sun.nio.fs.WindowsWatchService
+        clock: 1613568899 2021-02-17T13:34:59.890724100Z
+ thread count: 25
+ peak threads: 25
+ user threads: 11
+        Thread[Reference Handler,10,system]
+        Thread[Finalizer,8,system]
+        Thread[Signal Dispatcher,9,system]
+        Thread[Attach Listener,5,system]
+        Thread[RMI TCP Accept-0,5,system]
+        Thread[RMI Scheduler(0),5,system]
+        Thread[Monitor Ctrl-Break,5,main]
+        Thread[pool-1-thread-1,5,main]
+        Thread[Q2-6a0d34dd-e6ba-4d79-9708-dde5096f0da0,5,main]
+        Thread[FileSystemWatchService,5,main]
+        Thread[Q2-97f0cf6d-b61c-40e5-9402-9913c2ebf98c,5,main]
+        Thread[FileSystemWatchService,5,main]
+        Thread[DestroyJavaVM,5,main]
+        Thread[Timer-0,5,main]
+        Thread[channel-sender-kisel-send,5,main]
+        Thread[channel-receiver-kisel-receive,5,main]
+        Thread[SystemMonitor,5,main]
+        Thread[Common-Cleaner,8,InnocuousThreadGroup]
+        Thread[RMI TCP Connection(idle),5,RMI Runtime]
+        Thread[RMI TCP Connection(idle),5,RMI Runtime]
+        Thread[RMI TCP Connection(idle),5,RMI Runtime]
+        Thread[RMI TCP Connection(idle),5,RMI Runtime]
+        Thread[RMI TCP Connection(idle),5,RMI Runtime]
+        Thread[RMI TCP Connection(idle),5,RMI Runtime]
+        Thread[RMI TCP Connection(13)-192.168.56.1,5,RMI Runtime]
+name-registrar:
+  Q2-1: org.jpos.q2.Q2
+  tspace:default: org.jpos.space.TSpace
+     key-count: 0
+        gcinfo: 0,0
+  Q2: org.jpos.q2.Q2
+  mux.kisel: org.jpos.q2.iso.QMUX
+    tx=0, rx=0, tx_expired=0, tx_pending=0, rx_expired=0, rx_pending=0, rx_unhandled=0, rx_forwarded=0, connected=false, last=0
+  logger.Q2: org.jpos.util.Logger
+  kisel-channel: org.jpos.q2.iso.ChannelAdaptor
+    tx=0, rx=0, connects=0, last=0
+  logger.: org.jpos.util.Logger
+  logger.Q2.buffered: org.jpos.util.BufferedLogListener
+  channel.kisel-channel: com.bbw.apiva.channel.BbwVaChannel
+  </info>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="Q2.system" at="2021-02-17T20:36:09.925366600">
+  <info>
+    removed deploy/00_logger.xml
+    created deploy/00_logger.xml.DUP
+    modified deploy/00_logger.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:09.929364200">
+  <warn>
+    Error Tidying. Could not tidy  C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml out of the way, by adding .BAD
+    It could not be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml.BAD see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:09.929364200" lifespan="1ms">
+  <info>
+    <exception name="C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml (The system cannot find the file specified)">
+    java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:217)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:277)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:264)
+	at org.jdom2.input.SAXBuilder.build(SAXBuilder.java:1116)
+	at org.jpos.q2.Q2.deploy(Q2.java:572)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:14.633187200">
+  <info>
+    removed deploy/10_channel_jpos.xml.DUP
+    created deploy/10_channel_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:14.633187200">
+  <info>
+    removed deploy/10_channel_jpos.xml.DUP
+    created deploy/10_channel_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:14.642171200" lifespan="6ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:14.642171200">
+  <warn>
+    Tidying C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml out of the way, by adding .DUP
+    It will be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml.DUP see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:14.642171200" lifespan="6ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml
+    <exception name="Q2:type=qbean,service=kisel-channel">
+    javax.management.InstanceAlreadyExistsException: Q2:type=qbean,service=kisel-channel
+	at java.management/com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:436)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1855)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:955)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:890)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:320)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.jpos.q2.QFactory.createQBean(QFactory.java:98)
+	at org.jpos.q2.Q2.deploy(Q2.java:590)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:14.643171">
+  <info>
+    removed deploy/10_channel_jpos.xml
+    created deploy/10_channel_jpos.xml.DUP
+    modified deploy/10_channel_jpos.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:14.698139900">
+  <info>
+    removed deploy/10_channel_jpos.xml
+    created deploy/10_channel_jpos.xml.DUP
+    modified deploy/10_channel_jpos.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:14.701137">
+  <warn>
+    Error Tidying. Could not tidy  C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml out of the way, by adding .BAD
+    It could not be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml.BAD see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:14.701137" lifespan="1ms">
+  <info>
+    <exception name="C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml (The system cannot find the file specified)">
+    java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:217)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:277)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:264)
+	at org.jdom2.input.SAXBuilder.build(SAXBuilder.java:1116)
+	at org.jpos.q2.Q2.deploy(Q2.java:572)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:18.142998200">
+  <info>
+    removed deploy/20_mux_jpos.xml.DUP
+    created deploy/20_mux_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:18.142998200">
+  <info>
+    removed deploy/20_mux_jpos.xml.DUP
+    created deploy/20_mux_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:18.161988300">
+  <warn>
+    Tidying C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml out of the way, by adding .DUP
+    It will be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml.DUP see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:18.161988300" lifespan="16ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml
+    <exception name="Q2:type=qbean,service=kisel">
+    javax.management.InstanceAlreadyExistsException: Q2:type=qbean,service=kisel
+	at java.management/com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:436)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1855)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:955)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:890)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:320)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.jpos.q2.QFactory.createQBean(QFactory.java:98)
+	at org.jpos.q2.Q2.deploy(Q2.java:590)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:18.161988300" lifespan="16ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:18.162987600">
+  <info>
+    removed deploy/20_mux_jpos.xml
+    created deploy/20_mux_jpos.xml.DUP
+    modified deploy/20_mux_jpos.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:18.162987600">
+  <info>
+    removed deploy/20_mux_jpos.xml
+    created deploy/20_mux_jpos.xml.DUP
+    modified deploy/20_mux_jpos.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:18.165985500">
+  <warn>
+    Error Tidying. Could not tidy  C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml out of the way, by adding .BAD
+    It could not be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml.BAD see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:18.165985500" lifespan="1ms">
+  <info>
+    <exception name="C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml (The system cannot find the file specified)">
+    java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:217)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:277)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:264)
+	at org.jdom2.input.SAXBuilder.build(SAXBuilder.java:1116)
+	at org.jpos.q2.Q2.deploy(Q2.java:572)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:21.855088200">
+  <info>
+    removed deploy/99_sysmon.xml.DUP
+    created deploy/99_sysmon.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:21.855088200">
+  <info>
+    removed deploy/99_sysmon.xml.DUP
+    created deploy/99_sysmon.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:21.862089500" lifespan="6ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml
+  </info>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2021-02-17T20:36:21.863084900">
+  <info>
+    Starting SystemMonitor
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:21.863084900">
+  <warn>
+    Tidying C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml out of the way, by adding .DUP
+    It will be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml.DUP see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:21.863084900" lifespan="6ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml
+    <exception name="Q2:type=qbean,service=sysmon">
+    javax.management.InstanceAlreadyExistsException: Q2:type=qbean,service=sysmon
+	at java.management/com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:436)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1855)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:955)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:890)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:320)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.jpos.q2.QFactory.createQBean(QFactory.java:98)
+	at org.jpos.q2.Q2.deploy(Q2.java:590)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:21.863084900">
+  <info>
+    removed deploy/99_sysmon.xml
+    created deploy/99_sysmon.xml.DUP
+    modified deploy/99_sysmon.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:21.864085700">
+  <info>
+    removed deploy/99_sysmon.xml
+    created deploy/99_sysmon.xml.DUP
+    modified deploy/99_sysmon.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:21.866082200">
+  <warn>
+    Error Tidying. Could not tidy  C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml out of the way, by adding .BAD
+    It could not be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml.BAD see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:36:21.866082200">
+  <info>
+    <exception name="C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml (The system cannot find the file specified)">
+    java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:217)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:277)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:264)
+	at org.jdom2.input.SAXBuilder.build(SAXBuilder.java:1116)
+	at org.jpos.q2.Q2.deploy(Q2.java:572)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2021-02-17T20:36:21.882076100">
+  <info>
+           OS: Windows 10 (10.0)
+         Java: 11.0.6 (JetBrains s.r.o) AES-secure
+  environment: default
+ process name: 3160@WSNBMNTRs
+    user name: Phoon
+         host: WSNBMNTRs/192.168.56.1
+          cwd: C:\Users\Phoon\Desktop\BBW\api-va
+   free space: 111.1 GiB
+      version: 2.1.5 (54f5dee)
+     instance: 4052c6c7-b3c1-46a0-9a78-feda069aadd4
+       uptime: 00:01:15.871 (-1.000000)
+   processors: 8
+       drift : 0
+memory(t/u/f): 221/67/153
+     encoding: UTF-8
+     timezone: Asia/Bangkok (Indochina Time) +07:00
+watch service: sun.nio.fs.WindowsWatchService
+        clock: 1613568981 2021-02-17T13:36:21.865083200Z
+ thread count: 27
+ peak threads: 27
+ user threads: 11
+        Thread[Reference Handler,10,system]
+        Thread[Finalizer,8,system]
+        Thread[Signal Dispatcher,9,system]
+        Thread[Attach Listener,5,system]
+        Thread[RMI TCP Accept-0,5,system]
+        Thread[RMI Scheduler(0),5,system]
+        Thread[Monitor Ctrl-Break,5,main]
+        Thread[pool-1-thread-1,5,main]
+        Thread[Q2-268c8c93-9813-4331-aba9-579e63c9535a,5,main]
+        Thread[FileSystemWatchService,5,main]
+        Thread[Q2-4052c6c7-b3c1-46a0-9a78-feda069aadd4,5,main]
+        Thread[FileSystemWatchService,5,main]
+        Thread[DestroyJavaVM,5,main]
+        Thread[Timer-0,5,main]
+        Thread[channel-sender-kisel-send,5,main]
+        Thread[channel-receiver-kisel-receive,5,main]
+        Thread[SystemMonitor,5,main]
+        Thread[Common-Cleaner,8,InnocuousThreadGroup]
+        Thread[RMI TCP Connection(29)-192.168.56.1,5,RMI Runtime]
+        Thread[RMI TCP Connection(23)-192.168.56.1,5,RMI Runtime]
+        Thread[RMI TCP Connection(21)-192.168.56.1,5,RMI Runtime]
+        Thread[RMI TCP Connection(25)-192.168.56.1,5,RMI Runtime]
+        Thread[RMI TCP Connection(30)-192.168.56.1,5,RMI Runtime]
+        Thread[RMI TCP Connection(15)-192.168.56.1,5,RMI Runtime]
+        Thread[RMI TCP Connection(17)-192.168.56.1,5,RMI Runtime]
+        Thread[RMI TCP Connection(19)-192.168.56.1,5,RMI Runtime]
+        Thread[RMI TCP Connection(27)-192.168.56.1,5,RMI Runtime]
+name-registrar:
+  Q2-1: org.jpos.q2.Q2
+  tspace:default: org.jpos.space.TSpace
+     key-count: 0
+        gcinfo: 0,0
+  Q2: org.jpos.q2.Q2
+  mux.kisel: org.jpos.q2.iso.QMUX
+    tx=0, rx=0, tx_expired=0, tx_pending=0, rx_expired=0, rx_pending=0, rx_unhandled=0, rx_forwarded=0, connected=false, last=0
+  logger.Q2: org.jpos.util.Logger
+  kisel-channel: org.jpos.q2.iso.ChannelAdaptor
+    tx=0, rx=0, connects=0, last=0
+  logger.: org.jpos.util.Logger
+  logger.Q2.buffered: org.jpos.util.BufferedLogListener
+  channel.kisel-channel: com.bbw.apiva.channel.BbwVaChannel
+  </info>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="Q2.system" at="2021-02-17T20:37:31.471455700">
+  <info>
+    Q2 started, deployDir=C:\Users\Phoon\Desktop\BBW\api-va\deploy, environment=default
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:37:31.735301900">
+  <warn>
+    Tidying C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml out of the way, by adding .DUP
+    It will be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml.DUP see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:37:31.736302800">
+  <info>
+    Q2 started, deployDir=C:\Users\Phoon\Desktop\BBW\api-va\deploy, environment=default
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:37:32.226020700" lifespan="486ms">
+  <version>
+    jPOS 2.1.5 master/54f5dee (2020-12-06 18:53:51 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </version>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:37:32.226020700" lifespan="740ms">
+  <version>
+    jPOS 2.1.5 master/54f5dee (2020-12-06 18:53:51 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </version>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:37:32.233015700">
+  <trace>
+    undeploying:C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml
+  </trace>
+</log>
+</logger>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="Q2.system" at="2021-02-17T20:45:59.982103600">
+  <info>
+    removed deploy/00_logger.xml
+    created deploy/00_logger.xml.DUP
+    modified deploy/00_logger.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:45:59.985101900">
+  <warn>
+    Error Tidying. Could not tidy  C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml out of the way, by adding .BAD
+    It could not be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml.BAD see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:45:59.985101900" lifespan="1ms">
+  <info>
+    <exception name="C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml (The system cannot find the file specified)">
+    java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:217)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:277)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:264)
+	at org.jdom2.input.SAXBuilder.build(SAXBuilder.java:1116)
+	at org.jpos.q2.Q2.deploy(Q2.java:572)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:04.293948300">
+  <info>
+    removed deploy/10_channel_jpos.xml.DUP
+    created deploy/10_channel_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:04.293948300">
+  <info>
+    removed deploy/10_channel_jpos.xml.DUP
+    created deploy/10_channel_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:04.301947500">
+  <warn>
+    Tidying C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml out of the way, by adding .DUP
+    It will be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml.DUP see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:04.301947500" lifespan="6ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:04.301947500" lifespan="6ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml
+    <exception name="Q2:type=qbean,service=kisel-channel">
+    javax.management.InstanceAlreadyExistsException: Q2:type=qbean,service=kisel-channel
+	at java.management/com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:436)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1855)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:955)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:890)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:320)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.jpos.q2.QFactory.createQBean(QFactory.java:98)
+	at org.jpos.q2.Q2.deploy(Q2.java:590)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:04.302943900">
+  <info>
+    removed deploy/10_channel_jpos.xml
+    created deploy/10_channel_jpos.xml.DUP
+    modified deploy/10_channel_jpos.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:04.346918">
+  <info>
+    removed deploy/10_channel_jpos.xml
+    created deploy/10_channel_jpos.xml.DUP
+    modified deploy/10_channel_jpos.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:04.348916700">
+  <warn>
+    Error Tidying. Could not tidy  C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml out of the way, by adding .BAD
+    It could not be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml.BAD see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:04.348916700">
+  <info>
+    <exception name="C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml (The system cannot find the file specified)">
+    java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\deploy\10_channel_jpos.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:217)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:277)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:264)
+	at org.jdom2.input.SAXBuilder.build(SAXBuilder.java:1116)
+	at org.jpos.q2.Q2.deploy(Q2.java:572)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:09.652058200">
+  <info>
+    removed deploy/20_mux_jpos.xml.DUP
+    created deploy/20_mux_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:09.652058200">
+  <info>
+    removed deploy/20_mux_jpos.xml.DUP
+    created deploy/20_mux_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:09.673034900">
+  <warn>
+    Tidying C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml out of the way, by adding .DUP
+    It will be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml.DUP see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:09.674036300" lifespan="19ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml
+    <exception name="Q2:type=qbean,service=kisel">
+    javax.management.InstanceAlreadyExistsException: Q2:type=qbean,service=kisel
+	at java.management/com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:436)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1855)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:955)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:890)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:320)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.jpos.q2.QFactory.createQBean(QFactory.java:98)
+	at org.jpos.q2.Q2.deploy(Q2.java:590)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:09.674036300" lifespan="20ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:09.675033600">
+  <info>
+    removed deploy/20_mux_jpos.xml
+    created deploy/20_mux_jpos.xml.DUP
+    modified deploy/20_mux_jpos.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:09.676033400">
+  <info>
+    removed deploy/20_mux_jpos.xml
+    created deploy/20_mux_jpos.xml.DUP
+    modified deploy/20_mux_jpos.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:09.678047700">
+  <warn>
+    Error Tidying. Could not tidy  C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml out of the way, by adding .BAD
+    It could not be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml.BAD see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:09.678047700" lifespan="1ms">
+  <info>
+    <exception name="C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml (The system cannot find the file specified)">
+    java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\deploy\20_mux_jpos.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:217)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:277)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:264)
+	at org.jdom2.input.SAXBuilder.build(SAXBuilder.java:1116)
+	at org.jpos.q2.Q2.deploy(Q2.java:572)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:15.500267300">
+  <info>
+    removed deploy/99_sysmon.xml.DUP
+    created deploy/99_sysmon.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:15.500267300">
+  <info>
+    removed deploy/99_sysmon.xml.DUP
+    created deploy/99_sysmon.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:15.508250" lifespan="6ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:15.508250">
+  <warn>
+    Tidying C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml out of the way, by adding .DUP
+    It will be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml.DUP see log above for detail of problem.
+  </warn>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2021-02-17T20:46:15.509250400">
+  <info>
+    Starting SystemMonitor
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:15.509250400" lifespan="7ms">
+  <info>
+    deploy: C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml
+    <exception name="Q2:type=qbean,service=sysmon">
+    javax.management.InstanceAlreadyExistsException: Q2:type=qbean,service=sysmon
+	at java.management/com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:436)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1855)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:955)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:890)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:320)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.jpos.q2.QFactory.createQBean(QFactory.java:98)
+	at org.jpos.q2.Q2.deploy(Q2.java:590)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:15.509250400">
+  <info>
+    removed deploy/99_sysmon.xml
+    created deploy/99_sysmon.xml.DUP
+    modified deploy/99_sysmon.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:15.510249">
+  <info>
+    removed deploy/99_sysmon.xml
+    created deploy/99_sysmon.xml.DUP
+    modified deploy/99_sysmon.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:15.513249800">
+  <warn>
+    Error Tidying. Could not tidy  C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml out of the way, by adding .BAD
+    It could not be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml.BAD see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:15.514248700" lifespan="3ms">
+  <info>
+    <exception name="C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml (The system cannot find the file specified)">
+    java.io.FileNotFoundException: C:\Users\Phoon\Desktop\BBW\api-va\deploy\99_sysmon.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:217)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:277)
+	at org.jdom2.input.sax.SAXBuilderEngine.build(SAXBuilderEngine.java:264)
+	at org.jdom2.input.SAXBuilder.build(SAXBuilder.java:1116)
+	at org.jpos.q2.Q2.deploy(Q2.java:572)
+	at org.jpos.q2.Q2.deploy(Q2.java:401)
+	at org.jpos.q2.Q2.run(Q2.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+    </exception>
+  </info>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2021-02-17T20:46:15.529254200">
+  <info>
+           OS: Windows 10 (10.0)
+         Java: 11.0.6 (JetBrains s.r.o) AES-secure
+  environment: default
+ process name: 1332@WSNBMNTRs
+    user name: Phoon
+         host: WSNBMNTRs/192.168.56.1
+          cwd: C:\Users\Phoon\Desktop\BBW\api-va
+   free space: 111 GiB
+      version: 2.1.5 (54f5dee)
+     instance: 5af1ec0a-6889-48be-bfe7-3d819692f0ac
+       uptime: 00:00:27.118 (-1.000000)
+   processors: 8
+       drift : 0
+memory(t/u/f): 221/135/85
+     encoding: UTF-8
+     timezone: Asia/Bangkok (Indochina Time) +07:00
+watch service: sun.nio.fs.WindowsWatchService
+        clock: 1613569575 2021-02-17T13:46:15.511247800Z
+ thread count: 21
+ peak threads: 21
+ user threads: 11
+        Thread[Reference Handler,10,system]
+        Thread[Finalizer,8,system]
+        Thread[Signal Dispatcher,9,system]
+        Thread[Attach Listener,5,system]
+        Thread[RMI TCP Accept-0,5,system]
+        Thread[RMI Scheduler(0),5,system]
+        Thread[Monitor Ctrl-Break,5,main]
+        Thread[pool-1-thread-1,5,main]
+        Thread[Q2-5af1ec0a-6889-48be-bfe7-3d819692f0ac,5,main]
+        Thread[FileSystemWatchService,5,main]
+        Thread[Q2-c55d230f-3a54-4e9f-bf46-37bc766cebe8,5,main]
+        Thread[FileSystemWatchService,5,main]
+        Thread[DestroyJavaVM,5,main]
+        Thread[Timer-0,5,main]
+        Thread[channel-sender-kisel-send,5,main]
+        Thread[channel-receiver-kisel-receive,5,main]
+        Thread[SystemMonitor,5,main]
+        Thread[Common-Cleaner,8,InnocuousThreadGroup]
+        Thread[RMI TCP Connection(2)-192.168.56.1,5,RMI Runtime]
+        Thread[RMI TCP Connection(4)-192.168.56.1,5,RMI Runtime]
+        Thread[RMI TCP Connection(5)-192.168.56.1,5,RMI Runtime]
+name-registrar:
+  Q2-1: org.jpos.q2.Q2
+  tspace:default: org.jpos.space.TSpace
+     key-count: 0
+        gcinfo: 0,0
+  Q2: org.jpos.q2.Q2
+  mux.kisel: org.jpos.q2.iso.QMUX
+    tx=0, rx=0, tx_expired=0, tx_pending=0, rx_expired=0, rx_pending=0, rx_unhandled=0, rx_forwarded=0, connected=false, last=0
+  logger.Q2: org.jpos.util.Logger
+  kisel-channel: org.jpos.q2.iso.ChannelAdaptor
+    tx=0, rx=0, connects=0, last=0
+  logger.: org.jpos.util.Logger
+  logger.Q2.buffered: org.jpos.util.BufferedLogListener
+  channel.kisel-channel: com.bbw.apiva.channel.BbwVaChannel
+  </info>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="Q2.system" at="2021-02-17T20:46:42.184559500">
+  <info>
+    Q2 started, deployDir=C:\Users\Phoon\Desktop\BBW\api-va\deploy, environment=default
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:42.484386200">
+  <warn>
+    Tidying C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml out of the way, by adding .DUP
+    It will be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml.DUP see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:42.486386600">
+  <info>
+    Q2 started, deployDir=C:\Users\Phoon\Desktop\BBW\api-va\deploy, environment=default
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:43.042067400" lifespan="841ms">
+  <version>
+    jPOS 2.1.5 master/54f5dee (2020-12-06 18:53:51 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </version>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:43.042067400" lifespan="553ms">
+  <version>
+    jPOS 2.1.5 master/54f5dee (2020-12-06 18:53:51 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </version>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:46:43.050062700">
+  <trace>
+    undeploying:C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml
+  </trace>
+</log>
+</logger>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="Q2.system" at="2021-02-17T20:48:24.173530100">
+  <info>
+    removed deploy/00_logger_jpos.xml
+    created deploy/00_logger_jpos.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:48:24.174529100">
+  <info>
+    removed deploy/00_logger_jpos.xml
+    created deploy/00_logger_jpos.xml.DUP
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:48:24.176527300">
+  <trace>
+    undeploying:C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger_jpos.xml
+  </trace>
+</log>
+</logger>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="Q2.system" at="2021-02-17T20:58:51.795145800">
+  <info>
+    Q2 started, deployDir=C:\Users\Phoon\Desktop\BBW\api-va\deploy, environment=default
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:58:52.079981600">
+  <warn>
+    Tidying C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml out of the way, by adding .DUP
+    It will be called: C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml.DUP see log above for detail of problem.
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:58:52.080983500">
+  <info>
+    Q2 started, deployDir=C:\Users\Phoon\Desktop\BBW\api-va\deploy, environment=default
+  </info>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:58:52.526725500" lifespan="715ms">
+  <version>
+    jPOS 2.1.5 master/54f5dee (2020-12-06 18:53:51 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </version>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:58:52.527723800" lifespan="443ms">
+  <version>
+    jPOS 2.1.5 master/54f5dee (2020-12-06 18:53:51 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </version>
+</log>
+<log realm="Q2.system" at="2021-02-17T20:58:52.540717900">
+  <trace>
+    undeploying:C:\Users\Phoon\Desktop\BBW\api-va\deploy\00_logger.xml
+  </trace>
+</log>
+</logger>

@@ -1,0 +1,10 @@
+<channel-adaptor name="kisel-channel" class="org.jpos.q2.iso.ChannelAdaptor" logger="Q2">
+<channel class="com.bbw.apiva.channel.BbwVaChannel" packager="org.jpos.iso.packager.GenericPackager">
+<property name="host" value="localhost"/>
+<property name="port" value="8000"/>
+<property name="packager-config" value="cfg/bbw-va-packager.xml"/>
+</channel>
+<in>bbwva-send</in>
+<out>bbwva-receive</out>
+<reconnect-delay>10000</reconnect-delay>
+</channel-adaptor>
